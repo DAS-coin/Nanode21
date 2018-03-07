@@ -4,6 +4,7 @@ h2 { color: grey; font-family: 'Lucida Sans', sans-serif; font-size: 18px; margi
 h3 { color: grey; font-family: 'Lucida Sans', sans-serif; font-size: 15px; margin:10 30; }
 .info {padding: 5px 50px} 
 .logo {margin-right:50px;}
+.footer  {text-align:center;}
 a:link, a:visited {text-decoration:none;color:#256f00; font-weight:bold}
 a:hover {color: black} 
 p ,li {line-height:22px }
