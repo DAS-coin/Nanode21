@@ -1,9 +1,16 @@
-body { background-color: #0078b6; }
-h1 { color: #ffffff; font-family: 'Lucida Sans', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 58px; }
-h2 { color: #ffffff; font-family: 'Lucida Sans', sans-serif; font-size: 34px; font-weight: 300; line-height: 58px; margin: 0 0 58px; }
-h3 { color: #ff0000; font-family: 'Lucida Sans', sans-serif; font-size: 18px; font-weight: 300; line-height: 58px; margin: 0 0 58px; }
-.medium{ color: #eff1f0; font-family: 'Lucida Sans', sans-serif; font-size: 18px; line-height: 26px; text-indent: 30px; margin: 0; }
-.small { color: #eff1f0; font-family: 'Lucida Sans', sans-serif; font-size: 14px; line-height: 26px; text-indent: 30px; margin: 0; }
-td { color: #eff1f0; font-family: 'Lucida Sans', sans-serif; font-size: 18px; line-height: 26px; text-indent: 30px; margin: 0; }
-div.float { border-color: #b7d800; border-style:solid; border-size:10px; margin:5px; } 
-hr { color: #eff1f0; opacity: 0.2; margin:30px }
+body { background-color: #fff; }
+h1 { color:grey; font-family: 'Lucida Sans', sans-serif; font-size: 38px; position:absolute; top:5px;left:200px; }
+h2 { color: grey; font-family: 'Lucida Sans', sans-serif; font-size: 18px; margin: 0 0 28px; }
+h3 { color: grey; font-family: 'Lucida Sans', sans-serif; font-size: 15px; margin:10 30; }
+.info {padding: 5px 50px} 
+.logo {margin-right:50px;}
+a:link, a:visited {text-decoration:none;color:#256f00; font-weight:bold}
+a:hover {color: black} 
+p ,li {line-height:22px }
+hr {color:grey;width:95%}
+.medium{ color: black;  font-size: 15px;line-height: 22px; text-indent: 20px; 
+         -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none}
+.small { color: #676767; font-size:12px; line-height: 18px; text-indent: 20px; 
+         -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none}
+.ticker {max-width:330px;position: absolute; right:60px; top:85px; border:1px dotted black; background-color: #e1e1e1; color: #0e1121; font-family: 'Lucida Sans', sans-serif; font-size: 11px; font-weight: 100; text-indent: 8px; 
+        -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;padding:5px;margin:0 10 10 0}
