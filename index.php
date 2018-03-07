@@ -125,15 +125,15 @@ Value: <?php print ($nanoPriceUSD . " | " . $nanoPriceEUR . " | " . $nanoPriceBT
 }
 ?>
 </div>
-
-<!-- Node Info Table -->
+<!-- Node Info -->
 
 <div class="info">	
-<0p class="medium">Nanode21 is running at the moment two nodes for the Nano currency network, <a href="http://172.104.246.18/display.php" target:"_blank">one</a> at Frankfurt, Germany and this one here in Tokyo, Japan. <br/>
-Running nodes helps keeping the network in a good shape and - if selected as <a href="https://www.nanode.co/representatives" target:"_blank">representative nodes</a> - make sure that the  voting process is as decentralized as possible.<br/>
-If you are interested in running your own node: <a href="setupnode.htm">here</a>'s a simple howto for it.<br/>
-Otherwise feel free to select this node as a representative in your wallet. Donation address at the bottom.</p>
-
+<p class="medium">
+	
+<!--
+Enter your description/text/picture of your cat/whatever here
+-->
+</p>
 
 <h3>Node Information:</h3>
 
@@ -143,8 +143,8 @@ Number of Unchecked Blocks: <?php print($uncheckedBlocks) ?><br/>
 Number of Peers: <?php print($numPeers) ?><br/>
 Address: <a  href="https://www.nanode.co/account/<?php print($nanoNodeAccount); ?>" target="_blank">xrb_1i9ugg14c5sp....59xn45mwoa54</a><br/>
 Voting Weight: <?php echo $votingWeight; ?> Nano<br/<br/>
-Systems: Arch Linux: Dual Core 4gb Ram<br/>
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ubuntu 16.4.3: 1Gb ram single core<br/>
+<!-- Information about hosting server:-->
+Systems: 
 System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 <?php
   $data = shell_exec('uptime');
@@ -159,15 +159,13 @@ System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 </p>
 
 </div>
-
 <!-- Footer -->
-
 <hr>
-
-<p class="small"> This  here is a fork of <a href="https://github.com/dbachm123/phpNodeXRai" target="_blank">phpNodeXrai</a></p>
-<p class="small">Server Cost: $20/mo.  Donations: @nanode21  
+<div class="footer>
+<p class="small"><a href="https://github.com/stefonarch/Nanode21/" target="_blank">Nanode21</a> is forked from <a href="https://github.com/dbachm123/phpNodeXRai" target="_blank">phpNodeXrai</a></p>
+<p class="small">Server Cost: XY/mo. Donations:  
 <a  href="https://www.nanode.co/account/<?php print($nanoDonationAccount); ?>" target="_blank"><?php print($nanoDonationAccount); ?></a>
 </p>
-
+</div>											   
 </body>
 </html>
