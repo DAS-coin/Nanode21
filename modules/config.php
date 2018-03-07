@@ -1,20 +1,26 @@
 <?php
-// webpage variables
-$autoRefreshInSeconds = 5;
 
+// ----------- General Variables -----------
 
+// autorefresh interval for the status webpage in seconds
+$autoRefreshInSeconds = 10;
 
-// rai_node variables
+// coinmarketcap ticker URL for nano
+$cmcTickerUrl = 'https://api.coinmarketcap.com/v1/ticker/?convert=EUR';
+
+// version number
+$versionString = '1.1';
+
+// ----------- Nano Node Variables -----------
 
 // ip address for RPC (default: 127.0.0.1)
-$raiNodeRPCIP   = '127.0.0.1';
+$nanoNodeRPCIP   = '127.0.0.1';
 
 // ip address for RPC (default: 7076)
-$raiNodeRPCPort = '7076';
+$nanoNodeRPCPort = '7076';
 
 // node account
-$raiNodeAccount = 'xrb_1f56swb9qtpy3yoxiscq9799nerek153w43yjc9atoaeg3e91cc9zfr89ehj'; 
+$nanoNodeAccount = 'xrb_1i9ugg14c5sph67z4st9xk8xatz59xntofqpbagaihctg6ngog1f45mwoa54'; 
 
 // donation account
-$raiDonationAccount = 'xrb_1f56swb9qtpy3yoxiscq9799nerek153w43yjc9atoaeg3e91cc9zfr89ehj';
-?>
+$nanoDonationAccount = 'xrb_1trxfmdiq5s1qaihmrj3ef5kscht8ymocosnze6nrizru5ki1dbaqt7w3z1k';
