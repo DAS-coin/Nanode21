@@ -1,6 +1,6 @@
 # Nanode21
 
-Simple PHP-based monitor for a Nano network node.
+Simple and clean monitor frontend for a Nano network node based on curl and php.
 It connects to a running node via RPC and displays it's status on a simple webpage:
 
 ![phpNodeXRaiImage](https://github.com/stefonarch/phpNodeXRai/blob/master/preview.png) 
@@ -16,12 +16,10 @@ Currently, the following information is displayed:
 
 ## Installation
 
-To use nanode21, you will need to setup a RaiBlocks node and a webserver on the same machine.
-Instructions for setting up in a simple way a node can be found [here](http://nanode21.cloud/setupnode.htm)
-This How-to includes a [script](https://gist.github.com/stefonarch/61d21152a0b71341e4c4a1b5a0df7795) which will configure RPC settings and install some basic comands 
-to control the node.
+Instructions for setting up in a very simple way a node can be found [here](http://nanode21.cloud/setupnode.htm)
+This How-to includes a [script](https://gist.github.com/stefonarch/61d21152a0b71341e4c4a1b5a0df7795)  will configure RPC settings and install some basic comands to control the node.
 
-You will need to install and configure nginx and phpfm to run this stuff.
+You will need to install,configure and have running nginx (or apache) and phpfm to run this stuff.
 
 * Create a directory in your webserver directory, e.g. `/var/www/html/stats`.
 * Run `git clone https://github.com/https://github.com/stefonarch/Nanode21 /var/www/html/stats`
