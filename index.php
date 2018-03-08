@@ -136,7 +136,7 @@ Enter your description/text/picture of your cat/whatever here
 Current Block: <?php print($currentBlock) ?><br/>
 Number of Unchecked Blocks: <?php print($uncheckedBlocks) ?><br/>
 Number of Peers: <?php print($numPeers) ?><br/>
-Address: <a  href="https://www.nanode.co/account/<?php print($nanoNodeAccount); ?>" target="_blank">xrb_1i9ugg14c5sp....59xn45mwoa54</a><br/>
+Address: <a  href="https://www.nanode.co/account/<?php print($nanoNodeAccount); ?>" target="_blank"><?php print($nanoNodeAccount); ?></a><br/>
 Voting Weight: <?php echo $votingWeight; ?> Nano<br/<br/>
 System: <?php echo $serverInfo; ?><br/>
 System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
