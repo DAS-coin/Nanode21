@@ -124,7 +124,7 @@ Value: <?php print ($nanoPriceUSD . " | " . $nanoPriceEUR . " | " . $nanoPriceBT
 
 	<div class="info">	
 <p class="medium">
-	
+	test
 <!--
 Enter your description/text/picture of your cat/whatever here
 -->
