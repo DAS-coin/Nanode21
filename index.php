@@ -44,13 +44,19 @@ $peers = (array) $rpcPeers->{'peers'};
 $numPeers = count($peers);
 
 // -- Get node account balance from nano_node 
-$rpcNodeAccountBalance = getAccountBalance($ch, $nanoNodeAccount);
-$accBalanceMnano = rawToMnano($rpcNodeAccountBalance->{'balance'},4);
-$accPendingMnano = rawToMnano($rpcNodeAccountBalance->{'pending'},4);
+//$rpcNodeAccountBalance = getAccountBalance($ch, $nanoNodeAccount);
+//$accBalanceMnano = rawToMnano($rpcNodeAccountBalance->{'balance'},4);
+//$accPendingMnano = rawToMnano($rpcNodeAccountBalance->{'pending'},4);
+
+// -- Get Number of Delegators --
+$rpcDelegators =  getAccountDelegators($ch,$nanoNodeAccount);
+$numDelegators =  $rpcDelegators->{'count'};
+
+
 
 // -- Get representative info for current node from nano_node 
 $rpcNodeRepInfo = getRepresentativeInfo($ch, $nanoNodeAccount);
-$votingWeight = rawToMnano($rpcNodeRepInfo->{'weight'},4);
+$votingWeight = rawToMnano($rpcNodeRepInfo->{'weight'},0);
 $repAccount = $rpcNodeRepInfo->{'representative'};
 
 
@@ -124,7 +130,7 @@ Value: <?php print ($nanoPriceUSD . " | " . $nanoPriceEUR . " | " . $nanoPriceBT
 
 	<div class="info">	
 <p class="medium">
-	test
+
 <!--
 Enter your description/text/picture of your cat/whatever here
 -->
@@ -138,6 +144,7 @@ Number of Unchecked Blocks: <?php print($uncheckedBlocks) ?><br/>
 Number of Peers: <?php print($numPeers) ?><br/>
 Address: <a  href="https://www.nanode.co/account/<?php print($nanoNodeAccount); ?>" target="_blank"><?php print($nanoNodeAccount); ?></a><br/>
 Voting Weight: <?php echo $votingWeight; ?> Nano<br/<br/>
+Delegators:<?php echo $numDelegators ?></br>
 System: <?php echo $serverInfo; ?><br/>
 System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 <?php
