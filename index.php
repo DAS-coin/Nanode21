@@ -155,7 +155,7 @@ System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 </div>
 <!-- Footer -->
 <hr>
-<div class="footer>
+<div class="footer">
 <p class="small"><a href="https://github.com/stefonarch/Nanode21/" target="_blank">Nanode21</a> is forked from <a href="https://github.com/dbachm123/phpNodeXRai" target="_blank">phpNodeXrai</a></p>
 <p class="small">Server Cost: <?php echo $monthlyCosts; ?>/mo. Donations:  
 <a  href="https://www.nanode.co/account/<?php print($nanoDonationAccount); ?>" target="_blank"><?php print($nanoDonationAccount); ?></a>
