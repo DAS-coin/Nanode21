@@ -63,7 +63,7 @@ curl_close($ch);
 <a href="https://nano.org/" target="_blank">
 	<img src="modules/nano-logo.png" class="logo" alt="Logo Nano"/>
 </a>
-<h1> Nano Node 21 running</h1>
+<h1><?php echo $siteTitle; ?></h1>
 <br style="clear:all">
 
 <?php
