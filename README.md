@@ -21,10 +21,14 @@ This How-to includes a [script](https://gist.github.com/stefonarch/61d21152a0b71
 
 You will need to install,configure and have running nginx (or apache) and phpfm to run this stuff.
 
-* Create a directory in your webserver directory, e.g. `/var/www/html/stats`.
-* Run `git clone https://github.com/https://github.com/stefonarch/Nanode21 /var/www/html/stats`
+*  To install in server root you need to empty it first, then change in the server root Run `git clone https://github.com/https://github.com/stefonarch/Nanode21 .`
+Note the final dot!
+* You can install also in <your_IP>/stats or a name of your choice. Just run
+`git clone https://github.com/https://github.com/stefonarch/Nanode21 /var/www/html/stats`
+Note: /var/www/html may be different on your server.
 * This frontend should be visible at http://[your-ip-address]/stats/
-* Modify settings in /modules/config.php at your needs. Note that the IP-address and the port for the RPC  in the file `config.php` have to  match the entries in `RaiBlocks/config.json`
+* Modify settings in /modules/config.php at your needs. 
+Note that the IP-address and the port for the RPC  in the file `config.php` have to  match the entries in `RaiBlocks/config.json`
 * You might need to additionally install php7.0-curl, i.e. `sudo apt-get install php7.0-curl`
 
 Feel free to change your representative to my RaiBlocks node `xrb_1i9ugg14c5sph67z4st9xk8xatz59xntofqpbagaihctg6ngog1f45mwoa54` to support further decentralization within the Nano network.
