@@ -97,6 +97,16 @@ function getRepresentativeInfo($ch, $account)
   return postCurl($ch, $data);
 }
 
+// get delegators count for nano_node account
+function getAccountDelegators($ch, $account) 
+{
+  // get delegators count
+  $data = array("action" => "delegators_count", "account" => $account);
+
+  // post curl
+  return postCurl($ch, $data);
+}
+
 // get system load average
 function getSystemLoadAvg()
 {
