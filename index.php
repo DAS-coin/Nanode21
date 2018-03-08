@@ -58,7 +58,7 @@ $repAccount = $rpcNodeRepInfo->{'representative'};
 curl_close($ch);
 ?>
 
-!-- Nano Market Data Section-->
+<!-- Nano Market Data Section-->
 
 <a href="https://nano.org/" target="_blank">
 	<img src="modules/nano-logo.png" class="logo" alt="Logo Nano"/>
