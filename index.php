@@ -8,7 +8,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . '/modules/functions.php');
 
 <head>
 <link rel="stylesheet" type="text/css" href="modules/style.css">
-<title>Nano Node 21</title>
+<title><?php echo $siteTitle; ?></title>
 <meta http-equiv="refresh" content="<?php echo $autoRefreshInSeconds; ?>">
 </head>
 
@@ -138,8 +138,7 @@ Number of Unchecked Blocks: <?php print($uncheckedBlocks) ?><br/>
 Number of Peers: <?php print($numPeers) ?><br/>
 Address: <a  href="https://www.nanode.co/account/<?php print($nanoNodeAccount); ?>" target="_blank">xrb_1i9ugg14c5sp....59xn45mwoa54</a><br/>
 Voting Weight: <?php echo $votingWeight; ?> Nano<br/<br/>
-<!-- Information about hosting server:-->
-Systems: 
+System: <?php echo $serverInfo; ?>
 System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 <?php
   $data = shell_exec('uptime');
@@ -158,7 +157,7 @@ System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 <hr>
 <div class="footer>
 <p class="small"><a href="https://github.com/stefonarch/Nanode21/" target="_blank">Nanode21</a> is forked from <a href="https://github.com/dbachm123/phpNodeXRai" target="_blank">phpNodeXrai</a></p>
-<p class="small">Server Cost: XY/mo. Donations:  
+<p class="small">Server Cost: <?php echo $monthlyCosts; ?>/mo. Donations:  
 <a  href="https://www.nanode.co/account/<?php print($nanoDonationAccount); ?>" target="_blank"><?php print($nanoDonationAccount); ?></a>
 </p>
 </div>											   
