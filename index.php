@@ -58,10 +58,7 @@ $repAccount = $rpcNodeRepInfo->{'representative'};
 curl_close($ch);
 ?>
 
-
-
-
-<!-- Nano Market Data Section-->
+!-- Nano Market Data Section-->
 
 <a href="https://nano.org/" target="_blank">
 	<img src="modules/nano-logo.png" class="logo" alt="Logo Nano"/>
@@ -74,7 +71,6 @@ curl_close($ch);
 // get nano data from coinmarketcap
 $nanoCMCData = getNanoInfoFromCMCTicker($cmcTickerUrl);
 
-
 if (!empty($nanoCMCData))
 { // begin nano market data section
 
@@ -83,11 +79,10 @@ if (!empty($nanoCMCData))
   $nanoMarketCapEUR =       number_format( (float) $nanoCMCData->{'market_cap_eur'} / pow(10,9), 2 ) . "Mâ‚¬";
 
   $nanoPriceUSD = "$" . number_format( (float) $nanoCMCData->{'price_usd'} , 2 );
-  $nanoPriceEUR =       number_format( (float) $nanoCMCData->{'price_eur'} , 2 ) . "â‚¬";
+  $nanoPriceEUR =       number_format( (float) $nanoCMCData->{'price_eur'} , 2 ) . "€";
 
   $nanoChange24hPercent = number_format( (float) $nanoCMCData->{'percent_change_24h'}, 2 );
   $nanoChange7dPercent  = number_format( (float) $nanoCMCData->{'percent_change_7d'}, 2 );
-
 
   // color values for positive and negative change
   $colorPos = "darkgreen";
@@ -95,7 +90,6 @@ if (!empty($nanoCMCData))
 
   $nanoChange24hPercentHTMLCol = $colorNeg;
   $nanoChange7dPercentHTMLCol  = $colorNeg;
-
 
   // prepend '+' sign and make it green (hopefully ...)
   if ( $nanoChange24hPercent > 0)
@@ -124,10 +118,11 @@ Value: <?php print ($nanoPriceUSD . " | " . $nanoPriceEUR . " | " . $nanoPriceBT
 <?php
 }
 ?>
-</div>
+
+	</div>
 <!-- Node Info -->
 
-<div class="info">	
+	<div class="info">	
 <p class="medium">
 	
 <!--
