@@ -1,7 +1,7 @@
 <?php
 // include config and functions
-require_once($_SERVER["DOCUMENT_ROOT"] . '/modules/config.php');
-require_once($_SERVER["DOCUMENT_ROOT"] . '/modules/functions.php');
+require_once( 'modules/config.php');
+require_once( 'modules/functions.php');
 ?>
 
 <!DOCTYPE html>
