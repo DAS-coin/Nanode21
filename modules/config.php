@@ -22,5 +22,8 @@ $nanoNodeRPCPort = '7076';
 // node account
 $nanoNodeAccount = 'xrb_1i9ugg14c5sph67z4st9xk8xatz59xntofqpbagaihctg6ngog1f45mwoa54'; 
 
+//------------- Misc ----------------
+$serverInfo ='my linux server'
+$siteTitle ='Nano node Monitor'    //title of the webpage
 // donation account
 $nanoDonationAccount = 'xrb_1trxfmdiq5s1qaihmrj3ef5kscht8ymocosnze6nrizru5ki1dbaqt7w3z1k';
