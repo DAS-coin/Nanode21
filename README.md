@@ -3,7 +3,7 @@
 Simple and clean monitor frontend for a Nano network node based on curl and php.
 It connects to a running node via RPC and displays it's status on a simple webpage:
 
-![Nanode21img](https://github.com/stefonarch/phpNodeXRai/blob/master/preview.png) 
+![Nanode21img](https://github.com/stefonarch/phpNodeXRai/blob/master/preview1.png) 
 
 Currently, the following information is displayed:
 * Information text block
