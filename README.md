@@ -14,6 +14,7 @@ Currently, the following information is displayed:
 * Number of delegators
 * Custom info about the node and the server
 * Basic Nano value information
+* QR Code for Node and Donation accounts
 
 
 ## Installation
