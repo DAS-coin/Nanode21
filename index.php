@@ -161,18 +161,18 @@ System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 
 </div>
 
-<!-- QR-Code fill in your adresses after 'xrb%3A' otherwise it's Nanode21  -->
-<div class="info">
+<!-- QR-Code-->
 <div class=qrcode>
 <h3>Scan or click* to copy<h3>
-<h4>Node account:</h4>
-<img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=xrb%3Axrb_1i9ugg14c5sph67z4st9xk8xatz59xntof$
-<hr>
-<h4>Donation address</h4>
-
-<img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=xrb%3Axrb_1trxfmdiq5s1qaihmrj3ef5kscht8ymoco$
+<h4>Node account</h4>
+<a href="xrb:<?php echo $nanoNodeAccount;?>" class="small"><?php echo $nanoNodeAccount;?></a>
+<img  src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=xrb%3A<?php echo $nanoNodeAccount; ?>">
+<hr  style="width:200px">
+<h4>Donations</h4>
+<a href="xrb:<?php echo $nanoDonationAccount;?>" class="small"><?php echo $nanoDonationAccount;?></a>
+<img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=xrb%3A<?php echo $nanoDonationAccount; ?>">
+<br/>
 <p class=small>*)not implemented yet</p>
-</div>
 </div>
 
 <!-- Footer -->
