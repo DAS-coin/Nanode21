@@ -2,7 +2,7 @@ body { background-color: #fff; }
 h1 { color:grey; font-family: 'Lucida Sans', sans-serif; font-size: 38px; position:absolute; top:5px;left:200px; overflow: hidden; white-space:nowrap;}
 h2 { color: grey; font-family: 'Lucida Sans', sans-serif; font-size: 18px; margin: 0 0 28px; }
 h3 { color: grey; font-family: 'Lucida Sans', sans-serif; font-size: 15px; margin:10 30; }
-.info {padding: 5px 50px} 
+.info {padding: 5px 50px; float:left} 
 .logo {margin-right:50px;}
 .footer  {text-align:center;}
 .qrcode { text-align:center; width:300px; overflow: hidden; text-overflow: ellipsis;}
