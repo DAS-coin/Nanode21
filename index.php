@@ -67,7 +67,7 @@ curl_close($ch);
 <!-- Nano Market Data Section-->
 
 <a href="https://nano.org/" target="_blank">
-	<img src="modules/nano-logo.png" class="logo" alt="Logo Nano"/>
+	<img src="modules/Raicoin.ico" class="logo" alt="Logo Rai"/>
 </a>
 <h1><?php echo $siteTitle; ?></h1>
 <br style="clear:all">
@@ -165,11 +165,11 @@ System Load Average: <?php print(getSystemLoadAvg()); ?><br/>
 <div class=qrcode>
 <h3>Scan or click* to copy<h3>
 <h4>Node account</h4>
-<a href="xrb:<?php echo $nanoNodeAccount;?>" class="small"><?php echo $nanoNodeAccount;?></a>
+<a href="rai:<?php echo $nanoNodeAccount;?>" class="small"><?php echo $nanoNodeAccount;?></a>
 <img  src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=xrb%3A<?php echo $nanoNodeAccount; ?>">
 <hr  style="width:200px">
 <h4>Donations</h4>
-<a href="xrb:<?php echo $nanoDonationAccount;?>" class="small"><?php echo $nanoDonationAccount;?></a>
+<a href="rai:<?php echo $nanoDonationAccount;?>" class="small"><?php echo $nanoDonationAccount;?></a>
 <img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=xrb%3A<?php echo $nanoDonationAccount; ?>">
 <br/>
 <p class=small>*)not implemented yet</p>
