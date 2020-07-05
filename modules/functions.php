@@ -28,7 +28,7 @@ function postCurl($ch, $data)
 
   if (!$resp)
   {
-    myError("Nano node is not running");
+    myError("Rai node is not running");
   }
 
   // JSON decode and return
