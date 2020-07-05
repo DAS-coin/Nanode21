@@ -1,9 +1,9 @@
-# Nanode21
+# Rainode21
 
-Simple and clean monitor frontend for a Nano network node based on curl and php.
+Simple and clean monitor frontend for a Raicoin network node based on curl and php.
 It connects to a running node via RPC and displays it's status on a simple webpage:
 
-![Nanode21img](https://github.com/stefonarch/phpNodeXRai/blob/master/preview1.png) 
+![Rainode21img](https://github.com/stefonarch/phpNodeXRai/blob/master/preview1.png) 
 
 Currently, the following information is displayed:
 * Information text block
@@ -13,7 +13,7 @@ Currently, the following information is displayed:
 * Voting Weight
 * Number of delegators
 * Custom info about the node and the server
-* Basic Nano value information
+* Basic Raicoin value information
 * QR Code for Node and Donation accounts
 
 
@@ -24,10 +24,10 @@ This How-to includes a [script](https://gist.github.com/stefonarch/61d21152a0b71
 
 You will need to install,configure and have running nginx (or apache) and phpfm to run this stuff.
 
-*  To install in server root you need to empty it first, then change in the server root Run `git clone https://github.com/https://github.com/stefonarch/Nanode21 .`
+*  To install in server root you need to empty it first, then change in the server root Run `https://github.com/DAS-coin/Nanode21 .`
 Note the final dot!
 * You can install also in <your_IP>/stats or a name of your choice. Just run
-`git clone https://github.com/https://github.com/stefonarch/Nanode21 /var/www/html/stats`
+`git clone https://github.com/DAS-coin/Nanode21 /var/www/html/stats`
 Note: /var/www/html may be different on your server.
 * This frontend should be visible at http://[your-ip-address]/stats/
 * Modify settings in /modules/config.php at your needs. 
